@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
 import StarField from '@/components/StarField';
@@ -1180,9 +1181,9 @@ export default function HomePage() {
             不构成任何医疗、投资、法律或重大决策建议。
           </p>
           <p className="text-[10px] tracking-wider" style={{ color: c.footerText }}>
-            <a href="/terms" style={{ color: c.footerText, textDecoration: 'underline' }}>服务条款</a>
+            <Link href="/terms" style={{ color: c.footerText, textDecoration: 'underline' }}>服务条款</Link>
             {' · '}
-            <a href="/privacy" style={{ color: c.footerText, textDecoration: 'underline' }}>隐私政策</a>
+            <Link href="/privacy" style={{ color: c.footerText, textDecoration: 'underline' }}>隐私政策</Link>
           </p>
         </div>
       </footer>

@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 /**
  * 自动生成 sitemap.xml
  *

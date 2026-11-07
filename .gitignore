@@ -7,3 +7,5 @@ dist/
 *.tsbuildinfo
 .DS_Store
 node_modules
+out/
+.static-stash/
